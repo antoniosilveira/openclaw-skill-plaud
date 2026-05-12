@@ -1,0 +1,26 @@
+{
+  "name": "openclaw-skill-plaud",
+  "version": "0.1.0",
+  "description": "OpenClaw skill for Plaud recordings via Plaud MCP and CLI",
+  "license": "MIT",
+  "author": "Antonio Silveira",
+  "type": "module",
+  "bin": {
+    "plaud-export": "scripts/plaud-export.js"
+  },
+  "files": [
+    "SKILL.md",
+    "references",
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "openclaw",
+    "skill",
+    "plaud",
+    "mcp",
+    "transcription",
+    "meetings"
+  ]
+}
