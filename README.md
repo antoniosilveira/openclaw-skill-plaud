@@ -61,16 +61,15 @@ If no action is provided, `/plaud` shows compact help plus recent recordings. If
 
 ### Registering the Telegram command in OpenClaw
 
-Add `/plaud` as an additional Telegram custom command without replacing existing commands such as `/commands`:
+This skill declares:
 
-```json
-{
-  "command": "plaud",
-  "description": "Plaud recordings: recent, find, summarize, actions, transcript, export"
-}
+```yaml
+user-invocable: true
 ```
 
-This is intentionally separate from the skill bundle. OpenClaw skills teach the agent how to handle the command after Telegram routes it. Telegram command menu registration lives in OpenClaw channel config.
+With OpenClaw `commands.nativeSkills: "auto"`, Telegram can expose the skill directly as `/plaud`. This is additive. It does not require replacing existing custom commands such as `/commands`, `/menu`, or other configured entries.
+
+If native skill commands are disabled in your OpenClaw config, enable them rather than overwriting `channels.telegram.customCommands`.
 
 ## Skill install
 
