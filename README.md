@@ -1,6 +1,6 @@
-# OpenClaw Plaud Skill
+# OpenClaw Skill Plaud Note Taking
 
-An OpenClaw skill for working with Plaud recordings through Plaud MCP and the Plaud CLI.
+An OpenClaw skill for Plaud note taking workflows through Plaud MCP and the Plaud CLI.
 
 ## What it helps agents do
 
@@ -51,7 +51,7 @@ clawhub inspect plaud
 Manual install:
 
 ```bash
-git clone https://github.com/antoniosilveira/openclaw-skill-plaud.git plaud
+git clone https://github.com/antoniosilveira/openclaw-skill-plaud-note-taking.git plaud
 ```
 
 Then place the `plaud` folder in your OpenClaw skills directory or install it through your preferred OpenClaw skill workflow.
@@ -60,11 +60,13 @@ The skill folder is the repository root. The required skill file is `SKILL.md`.
 
 ## ClawHub
 
-This skill is published on ClawHub as `plaud`.
+This skill is currently published on ClawHub as `plaud`.
 
 - Install: `clawhub install plaud`
 - Inspect: `clawhub inspect plaud`
 - Update: `clawhub update plaud`
+
+Note: ClawHub reserves the `openclaw-` slug namespace, so `openclaw-skill-plaud-note-taking` cannot be used as the ClawHub slug unless the registry grants access to that namespace.
 
 ## Helpful links
 
