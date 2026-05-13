@@ -1,5 +1,32 @@
 # Plaud Workflow Patterns
 
+## Telegram `/plaud` router
+
+Use one command with sub-actions:
+
+```text
+/plaud [action] [target]
+```
+
+Routing rules:
+
+- Empty action: show help plus latest 3 recordings.
+- Unknown action: treat the full text after `/plaud` as a search query.
+- Missing target for `summary`, `actions`, `transcript`, or `export`: use the latest meaningful recording.
+- Latest meaningful recording: prefer the newest item over 30 seconds when possible, so accidental tiny clips are skipped.
+
+V1 actions:
+
+- `recent`
+- `last`
+- `find`
+- `summary`
+- `actions`
+- `transcript`
+- `export`
+- `status`
+- `login`
+
 ## Meeting digest
 
 Input: recording ID or search criteria.
