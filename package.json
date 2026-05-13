@@ -2,7 +2,7 @@
   "name": "openclaw-skill-plaud",
   "version": "0.1.0",
   "description": "OpenClaw skill for Plaud recordings via Plaud MCP and CLI",
-  "license": "MIT",
+  "license": "MIT-0",
   "author": "Antonio Silveira",
   "type": "module",
   "bin": {
