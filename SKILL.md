@@ -1,6 +1,7 @@
 ---
 name: plaud
-description: Use when working with Plaud recordings, including listing recent recordings, finding recordings by date or keyword, reading transcripts, summarizing notes, extracting action items, drafting follow-ups, exporting Plaud content, or diagnosing Plaud MCP/CLI authentication.
+description: Use when working with Plaud recordings, including /plaud Telegram workflows, listing recent recordings, finding recordings by date or keyword, reading transcripts, summarizing notes, extracting action items, drafting follow-ups, exporting Plaud content, or diagnosing Plaud MCP/CLI authentication.
+user-invocable: true
 ---
 
 # Plaud
@@ -51,7 +52,7 @@ Actions:
 
 If the user sends `/plaud <text>` and `<text>` is not a known action, treat it as `/plaud find <text>`.
 
-Slash command registration is handled by OpenClaw Telegram `customCommands`, not by the skill bundle itself. The skill documents and implements the behavior once OpenClaw routes the command text to the agent.
+Slash command registration can be handled by OpenClaw native skill commands when `commands.nativeSkills` is enabled. This skill declares `user-invocable: true`, so OpenClaw can expose `/plaud` without adding a separate Telegram `customCommands` entry. Do not replace existing custom commands such as `/commands` or `/menu` just to add this skill command.
 
 ## Standard workflows
 
