@@ -1,6 +1,6 @@
-# OpenClaw Plaud AI Skill
+# OpenClaw Plaud Skill
 
-An OpenClaw skill for working with Plaud AI note-taker recordings through Plaud MCP and the Plaud CLI.
+An OpenClaw skill for working with Plaud recordings through Plaud MCP and the Plaud CLI.
 
 ## What it helps agents do
 
@@ -39,6 +39,13 @@ plaud me
 Clone this repo into your OpenClaw skills directory or install it through your preferred OpenClaw skill workflow.
 
 The skill folder is the repository root. The required skill file is `SKILL.md`.
+
+## Helpful links
+
+- [Plaud website](https://www.plaud.ai/)
+- [Plaud MCP documentation](https://docs.plaud.ai/documentation/plaud_app/mcp)
+- [Plaud CLI documentation](https://docs.plaud.ai/documentation/plaud_app/cli)
+- [Plaud documentation index](https://docs.plaud.ai/llms.txt)
 
 ## License
 
