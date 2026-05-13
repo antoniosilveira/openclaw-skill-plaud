@@ -34,6 +34,44 @@ plaud login
 plaud me
 ```
 
+## Telegram command
+
+The recommended Telegram command is a single router command:
+
+```text
+/plaud [action] [target]
+```
+
+Supported actions:
+
+```text
+/plaud
+/plaud recent
+/plaud last
+/plaud find <query>
+/plaud summary [id|last|query]
+/plaud actions [id|last|query]
+/plaud transcript [id|last|query]
+/plaud export [id|last|query]
+/plaud status
+/plaud login
+```
+
+If no action is provided, `/plaud` shows compact help plus recent recordings. If the text after `/plaud` is not a known action, it is treated as a search query.
+
+### Registering the Telegram command in OpenClaw
+
+Add `/plaud` as an additional Telegram custom command without replacing existing commands such as `/commands`:
+
+```json
+{
+  "command": "plaud",
+  "description": "Plaud recordings: recent, find, summarize, actions, transcript, export"
+}
+```
+
+This is intentionally separate from the skill bundle. OpenClaw skills teach the agent how to handle the command after Telegram routes it. Telegram command menu registration lives in OpenClaw channel config.
+
 ## Skill install
 
 Install from ClawHub:
